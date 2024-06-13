@@ -236,3 +236,5 @@ EQUALITY OPERATORS == vs ===
 const val = '9'
 console.log('Loose equality', val == 9) //here it is type coersion,hence true
 console.log('Tight equality', val === 9) //Recommended
+console.log('Losse inequality', val != 9)
+console.log('Tight inequality', val !== 9)
