@@ -226,3 +226,13 @@ if(height) {
 } else {
     console.log('Undefined')
 }
+/*
+EQUALITY OPERATORS == vs ===
+    == is loose equality operator, it will check if values are match, does  
+    not take into consideration the type of values
+    === is equality operator, that will take into consideration the type of  
+    values as well
+*/
+const val = '9'
+console.log('Loose equality', val == 9) //here it is type coersion,hence true
+console.log('Tight equality', val === 9) //Recommended
