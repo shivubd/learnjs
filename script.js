@@ -237,4 +237,38 @@ const val = '9'
 console.log('Loose equality', val == 9) //here it is type coersion,hence true
 console.log('Tight equality', val === 9) //Recommended
 console.log('Losse inequality', val != 9)
-console.log('Tight inequality', val !== 9)
+console.log('Losse inequality', val !== 9)
+
+/*
+BOOLEAN LOGIC
+    && AND - any one false, equals to false
+    || OR - any one true, equals to true
+    ! NOT - true <=> false
+*/
+console.log('AND', true && false)
+console.log('OR', true || false)
+console.log('NOT', !false)
+
+/*
+
+SWITCH STATEMENT
+*/
+console.log('Switch statement')
+const switchValue = 4
+switch(switchValue) {
+    case 1: console.log('Sunday')
+    break
+    case 2: console.log('Monday')
+    break
+    case 3: console.log('Tuesday')
+    break
+    case 4: console.log('Wednesday')
+    break
+    case 5: console.log('Thursday')
+    break
+    case 6: console.log('Friday')
+    break
+    case 7: console.log('Saturday')
+    break
+    default: console.log('Not valid day')
+}
