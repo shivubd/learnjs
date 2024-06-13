@@ -186,3 +186,23 @@ if(age >= 18) {
 } else {
     console.log('Wait for just 1 year!')
 }
+
+/*
+TYPE CONVERSION
+    we can change the type of value using methods like Number(), String(),  
+    Boolean()
+*/
+console.log(Number('23'), typeof Number('23'))
+console.log(String(56),typeof String(56))
+console.log(Number('Jonas'), typeof Number('Jonas'))//this will result in NaN(not a number) which is also a type of number
+
+/*
+TYPE COERSION
+    the javascript changes the type of value depending upon the operation  
+    performed on that value.
+*/
+console.log('Im '+23+' years old')//here 23 will be converted to string and concatenation is performed
+console.log('50'-5)//here 50 is converted to number and substraction is performed
+console.log('10'+5+5)//here first it encounters a string and then + so it converts other values to string for concatenation
+console.log(10+5+'5') //here first it encounters 10+5 so it will become 15 and then when it encounters '5' it converts 15 to string and concatenates
+console.log('10'-'5'-'2'-2+'10')
