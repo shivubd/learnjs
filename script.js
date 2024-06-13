@@ -158,10 +158,8 @@ console.log('TYPE OPERATORS', typeof 'XYZ',date instanceof Date)
 OPERATOR PRESEDENCE
 operators perfor, multiple operation on given varible by using Operator precedence in which there is priority to each operator
 check this for precedence - https://www.w3schools.com/js/js_precedence.asp
-*/
 
 
-/*
 STRINGS AND TEMPLATE LITERALS
     we can concatenate strings using + symbol
     but for concatenation of complex strings it is confusing hence we use 
@@ -175,3 +173,16 @@ let result1 = "I'm "+firstname+', a '+(2024 - year)+' years old '+job+'!'
 //String template literals
 let result2 = `I'm ${firstname}, a ${2024 - year} years old ${job}!`
 console.log('STRING CONCATENATION',result1,'\nSTRING TEMPLATE LITERAL', result2)
+
+/*
+IF ELSE STATEMENTS
+*/
+console.log("IF/ELSE STATEMENTS")
+const age = 15
+if(age >= 18) {
+    console.log('You can now take a driving license 🏍')
+} else if(age < 17){
+    console.log(`You have not attained the age for driving license, please wait for another ${18 - age} years`)
+} else {
+    console.log('Wait for just 1 year!')
+}
