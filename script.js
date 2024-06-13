@@ -206,3 +206,23 @@ console.log('50'-5)//here 50 is converted to number and substraction is performe
 console.log('10'+5+5)//here first it encounters a string and then + so it converts other values to string for concatenation
 console.log(10+5+'5') //here first it encounters 10+5 so it will become 15 and then when it encounters '5' it converts 15 to string and concatenates
 console.log('10'-'5'-'2'-2+'10')
+
+/*
+TRUTHY AND FALSEY VALUES
+5 falsey values:
+    1. 0
+    2. ''
+    3. undefined
+    4. null
+    5. NaN
+Rest all are truthy values, empty object is also a truthy value
+*/
+console.log(Boolean(0),Boolean(''),Boolean(undefined), Boolean(null), Boolean(NaN))
+console.log(Boolean(10), Boolean('false'), Boolean({}))
+// console.log(typeof String(null))
+let height;
+if(height) {
+    console.log('Defined')
+} else {
+    console.log('Undefined')
+}
